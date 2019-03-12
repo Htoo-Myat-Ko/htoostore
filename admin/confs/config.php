@@ -1,9 +1,9 @@
 <?php 
-    $dbhost = "localhost";
+    $dbhost = "store.me";
     $dbuser = "root";
     $dbpass = "";
-    $dbname = "store";
+    $dbname = "htoostore";
      
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
-    $mysqli_select_db($conn, $dbname);
+    mysqli_select_db($conn, $dbname);
 ?>
