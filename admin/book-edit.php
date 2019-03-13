@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Book Edit</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <?php 
@@ -15,6 +16,12 @@
         $row = mysqli_fetch_assoc($result);
     ?>
     <h1>Edit Book</h1>
+    <ul class="menu">
+        <li><a href="book-list.php">Manage Books</a></li>
+        <li><a href="cat-list.php">Manage Categories</a></li>
+        <li><a href="orders.php">Manage Orders</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
 
     <form action="book-update.php" method="post" enctype=multipart/form-data>
         <input type="hidden" name="id" value="<?php echo $row['id']?>">

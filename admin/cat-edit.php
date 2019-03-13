@@ -1,3 +1,4 @@
+<?php include("confs/auth.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edit Category</title>
-    <style>
-        form label {
-            display: block;
-            margin-top: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h1>Edit Category</h1>
+    <ul class="menu">
+        <li><a href="book-list.php">Manage Books</a></li>
+        <li><a href="cat-list.php">Manage Categories</a></li>
+        <li><a href="orders.php">Manage Orders</a></li>
+        <li><a href="logout.php">Logout</a></li>
+    </ul>
 
     <?php 
         include("confs/config.php");
