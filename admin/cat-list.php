@@ -17,7 +17,7 @@
             <li title="<?php echo $row['remark']?>">
                 <a href="cat-del.php?id=<?php echo $row['id']?>" class="del">del</a>
                 <a href="cat-edit.php?id=<?php echo $row['id']?>">edit</a>
-                <?php echo $row["name"] ?>
+                <?php echo $row['name'] ?>
             </li>
         <?php endwhile; ?>
     </ul>

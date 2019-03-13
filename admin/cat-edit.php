@@ -33,6 +33,7 @@
         <textarea name="remark" id="remark"><?php echo $row['remark'] ?></textarea>
         <br><br>
 
-        <input type="submit" value="Update Category">        
+        <input type="submit" value="Update Category">  
+    </form>      
 </body>
 </html>
